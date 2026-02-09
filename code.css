@@ -1,46 +1,101 @@
-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/shooter.jpg) no-repeat 0 0;
-  background-size: auto;
-  min-height: auto;
+@font-face {
+  font-family: 'Barlow';
+  src: url('barlow.woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.target {
-  position: absolute;
-  top: 50px;
-  right: 50px;
+section{
+  border: 3px solid red;
   display: flex;
-  justify-content: space-around;
-  width: 180px;
-  height: 30px;
+  gap: 40px;
+
+}
+a{
+  text-decoration: none;
+}
+.main-image{
+  width:100%;
+  border: 3px solid red;
   margin: 0;
-  padding: 5px 5px;
-  list-style: none;
-  background: white;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
+}
+
+.image-container{
+  border: 3px green solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.second-part{
+  margin-left: 20%;
+}
+
+.opening-text{
+  border: yellow solid 3px;
+  width: 120%;
+  color: #7B8A92;
+  height: 5%;
+  margin-top: 55%;
+  font-family:Barlow, sans-serif;
+}
+
+.opening-text_subhead{
+  margin-top: 5%;
+  font-size: 20px;
+  border: yellow solid 3px;
+  width: 130%;
+  margin-bottom: 10%;
+  color: #96A5B1;
+  font-family:Barlow, sans-serif;
+}
+
+.link-sm{
+  border: 3px solid black;
+  width: 300%;
+  height: 300px;
+  display: flex;
+  gap: 100px;
+}
+
+.facebook-logo{
+  width: 120%;
+  height: 10%;
+  background-color:#255A9B;
+  display: flex;
+  border: 3px solid black;
+  padding: 3%;
   align-items: center;
 }
 
-li {
-  width: 13px;
-  height: 13px;
-  font-size: 0;
-  background-color: #333333;
-  border: 1px solid #333333;
-  border-radius: 50%;
-  margin-left: 0;
+.linkedin-logo{
+  width: 120%;
+  height: 10%;
+  background-color:#0076B6;
+  display: flex;
+  border: 3px solid black;
+  padding: 3%;
+  align-items: center;
 }
 
-/* Добавьте свой код под комментарием */
-li {
-  background-color: white;
+
+.link-sm_text{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-left: 3%;
+  width: 100%;
+  font-family:Barlow, sans-serif;
 }
 
-.target .first + li,
-.target .fourth + li{
-  background-color: red;
+.social-logo_text{
+  color: white;
+  width: 100%;
+}
+
+.social-logo_img{
+  height: 80%;
+  border: 3px solid black;
+
 }
