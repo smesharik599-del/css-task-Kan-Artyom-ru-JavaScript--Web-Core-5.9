@@ -1,46 +1,190 @@
-body {
-  position: relative;
+*{
   margin: 0;
-  padding: 0;
-  background: url(https://habsida-lms.s3.ap-northeast-2.amazonaws.com/webcore/shooter.jpg) no-repeat 0 0;
-  background-size: auto;
-  min-height: auto;
 }
 
-.target {
-  position: absolute;
-  top: 50px;
-  right: 50px;
+@font-face {
+  font-family: 'Barlow';
+  src: url('barlow.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+section{
+  border: 3px solid red;
   display: flex;
-  justify-content: space-around;
-  width: 180px;
-  height: 30px;
+
+}
+a{
+  text-decoration: none;
+}
+
+.first-block{
+  width: 55%;
   margin: 0;
-  padding: 5px 5px;
-  list-style: none;
-  background: white;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  transform: scale(1.2);
+}
+.main-image{
+  width:100%;
+  border: 3px solid red;
+  margin: 0;
+}
+
+.image-container{
+  border: 3px green solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.link-disc{
+  border: fuchsia solid 3px;
+  width: 35%;
+}
+.second-block{
+  border: #0076B6 solid 3px;
+  width: 45%;
+}
+.second-part{
+  border: 3px green solid;
+  width: 100%;
+  height: 100%;
+}
+
+.opening-text{
+  border: yellow solid 3px;
+  width: 90%;
+  color: #7B8A92;
+  height: 5%;
+  margin-top: 10%;
+  font-family:Barlow, sans-serif;
+  font-size: 2vw;
+  margin-left: 11%;
+}
+
+.opening-text_subhead{
+  margin-top: 5%;
+  font-size: 1vw;
+  border: yellow solid 3px;
+  width: 90%;
+  margin-bottom: 10%;
+  margin-left: 11%;
+  color: #96A5B1;
+  font-family:Barlow, sans-serif;
+}
+
+.link-sm{
+  border: 3px solid pink;
+  width: 99%;
+  justify-content: center;
+  height: 3%;
+  display: flex;
+  gap: 7%;
+}
+
+.facebook-logo{
+  width: 100%;
+  height: 90%;
+  background-color:#255A9B;
+  display: flex;
+  border: 3px solid black;
+  padding: 3%;
   align-items: center;
 }
 
-li {
-  width: 13px;
-  height: 13px;
-  font-size: 0;
-  background-color: #333333;
-  border: 1px solid #333333;
-  border-radius: 50%;
-  margin-left: 0;
+.linkedin-logo{
+  width: 100%;
+  height: 90%;
+  background-color:#0076B6;
+  display: flex;
+  border: 3px solid black;
+  padding: 3%;
+  align-items: center;
 }
 
-/* Добавьте свой код под комментарием */
-li {
-  background-color: white;
+
+.link-sm_text{
+  height: 100%;
+  border: 3px solid black;
+  display: flex;
+  font-size: 1vw;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-left: 3%;
+  width: 100%;
+  font-family:Barlow, sans-serif;
 }
 
-.target .first + li,
-.target .fourth + li{
-  background-color: red;
+.social-logo_text{
+  color: white;
+  width: 100%;
+}
+
+.social-logo_img{
+  height: 80%;
+  border: 3px solid black;
+
+}
+
+.or-text{
+  margin-left: 50.5%;
+  margin-top:5%;
+  font-family:Barlow, sans-serif;
+  color: #2A4A5C;
+  margin-bottom:5%;
+  font-size: 1vw;
+}
+
+.input-container{
+  display: flex;
+  gap:5px;
+  border: 3px solid lemonchiffon;
+  justify-content: center;
+}
+
+.input-block_em{
+  position: relative;
+  width: 30%;
+}
+
+.input-block_ph{
+  position: relative;
+  width: 30%;
+  margin-left: 18%;
+}
+.labelem{
+  margin: 0;
+  border: #0076B6 3px solid;
+  margin-left: 1px;
+  display: block;
+  font-family:Barlow, sans-serif;
+  color: #96A5B1;
+  font-size: 1vw;
+}
+
+.labelph{
+  margin: 0;
+  border: #0076B6 3px solid;
+  margin-left: 1px;
+  display: block;
+  font-family:Barlow, sans-serif;
+  color: #96A5B1;
+  font-size: 1vw;
+}
+input{
+  outline:none;
+  border:#EEEEEE;
+  width:15vw;
+  margin-left:1px;
+  bottom: 0;
+}
+
+.hidden{
+  position: absolute;
+  top: 0;
+  background-color: blue;
+  width:1.5px;
+  height:0;
+  transition:0.4s ease;
+}
+input:focus + .hidden{
+  height: 5vh;
 }
