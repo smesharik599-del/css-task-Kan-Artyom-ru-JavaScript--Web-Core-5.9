@@ -9,17 +9,19 @@
   font-style: normal;
 }
 
+body{
+  background-color: #EFF6FF;
+}
+
 main{
   width: 70%;
   margin-left: 15%;
   margin-top: 2%;
-  background-color:#EFF6FF;
 }
 
 section{
   display: flex;
-  min-height:500px;
-  max-height:850px;
+  height: 93vh;
 }
 a{
   text-decoration: none;
@@ -33,7 +35,7 @@ a{
 .main-image{
   width:100%;
   margin: 0;
-  height: 100%;
+  height: 99%;
 }
 
 .logo{
@@ -59,13 +61,14 @@ a{
 .second-part{
   width: 100%;
   height: 99%;
+  background-color: #FFFFFF;
 }
 
 .opening-text{
   width: 90%;
   color: #7B8A92;
+  padding-top: 10%;
   height: 5%;
-  margin-top: 10%;
   font-family:Barlow, sans-serif;
   font-size: 2vw;
   margin-left: 11%;
