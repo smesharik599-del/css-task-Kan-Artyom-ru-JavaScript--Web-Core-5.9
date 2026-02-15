@@ -7,58 +7,115 @@
   <title>Document</title>
 </head>
 <body>
-  <section>
-    <div class="first-block">
-      <div class="image-container">
-        <img src="bg.jpg" alt="main_img" class="main-image">
+  <main>
+    <section>
+      <div class="first-block">
+        <div class="image-container">
+          <img src="bg.jpg" alt="main_img" class="main-image">
+          <img src="logo.svg" alt="logo" class="logo">
+        </div>
       </div>
-    </div>
-    <div class="second-block">
-      <div class="second-part">
-        <H1 class="opening-text">
-          Get iinto it today
-        </H1>
-        <p class="opening-text_subhead">
-          There is no charge or obligation upon registration
-        </p>
-        <div class="link-sm">
-          <a href="#" class="link-disc">
-            <div class="facebook-logo">
-              <img src="facebook.svg" alt="facebook" class="social-logo_img">
-              <div class="link-sm_text">
-                <p class="social-logo_text">Register with facebook</p>
+      <div class="second-block">
+        <div class="second-part">
+          <H1 class="opening-text">
+            Get iinto it today
+          </H1>
+          <p class="opening-text_subhead">
+            There is no charge or obligation upon registration
+          </p>
+          <div class="link-sm">
+            <a href="#" class="link-disc">
+              <div class="facebook-logo">
+                <img src="facebook.svg" alt="facebook" class="social-logo_img">
+                <div class="link-sm_text">
+                  <p class="social-logo_text">Register with facebook</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="link-disc">
+              <div class="linkedin-logo">
+                <img src="linkedin.svg" alt="facebook" class="social-logo_img">
+                <div class="link-sm_text">
+                  <p class="social-logo_text">Register with Linkedin</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="or">
+            <hr>
+             <p class="or-text"> or </p> 
+            <hr>
+          </div>   
+          <div class="input-container">
+            <div class="input-block_em">
+              <label for="email" class="labelem">Email</label>
+              <input type="email" id="email" class="email">
+              <div class="hidden">
               </div>
             </div>
-          </a>
-          <a href="#" class="link-disc">
-            <div class="linkedin-logo">
-              <img src="linkedin.svg" alt="facebook" class="social-logo_img">
-              <div class="link-sm_text">
-                <p class="social-logo_text">Register with Linkedin</p>
+            <div class="input-block_ph">
+              <label for="Phone" class="labelph">Phone</label>
+              <input type="text" id="Phone" class="phone">
+              <div class="hidden">
               </div>
+            </div>
+          </div>  
+          <H2 class="opening-text-2">
+            What type of investor are you?
+          </H2>
+          <p class="opening-text_subhead-2">
+            Select the type of investor you are below
+          </p> 
+          <div class="radio-button">
+            <div class="choose">
+              <input type="radio" id="Individual" class="individual" name="investor-type" value="Individual">
+              <label for="Individual" class="label-radio" title="Choose only one">Individual</label>
+              <div class="discription-individual">
+                I am a natural person investing on my <br>
+                own behalf as a sole owner, joint tenant, <br>
+                or tenant in common.
+              </div>   
+            </div>
+            <div class="choose">
+              <input type="radio" id="Business" class="business" name="investor-type" value="Business">
+              <label for="Business" class="label-radio" title="Choose only one">Business</label>
+              <div class="discription-business">
+                I am investing on behalf of a company. <br>
+                I manage corporate liquidity and create financial <br>
+                reserves through a business account to scale operations and protect assets.
+              </div>   
+            </div>
+            <div class="choose">
+              <input type="radio" id="IRA" class="ira" name="investor-type" value="IRA">
+              <label for="IRA" class="label-radio" title="Choose only one">IRA</label>
+              <div class="discription-ira">
+                I am saving for retirement individually.<br>
+                  I use a personal account with tax advantages for <br>
+                long-term planning to maximize net returns and ensure future financial stability.
+              </div>   
+            </div>
+            <div class="choose">
+              <input type="radio" id="Trust" class="trust" name="investor-type" value="Trust">
+              <label for="Trust" class="label-radio" title="Choose only one">Trust</label>
+              <div class="discription-trust">
+                I am managing family capital or an inheritance.<br>
+                  I ensure legal asset protection and structured wealth transfer<br>
+                to beneficiaries through a trust to preserve fortune for future generations.
+              </div>
+            </div>
+          </div>
+          <div class="terms">
+            <input type="checkbox" id="term">
+            <label for="term" class="term-lb">I agree to the terms and receiving notifications from iintoo <a href="#" class="terms-link">View full terms</a></label>
+          </div>
+          <a href="#" class="reg">
+            <div class="create-button">
+              Create Account
             </div>
           </a>
         </div>
-        <div class="or">
-          <p class="or-text"> or </p> 
-        </div>   
-        <div class="input-container">
-          <div class="input-block_em">
-            <label for="email" class="labelem">Email</label>
-            <input type="email" id="email">
-            <div class="hidden">
-            </div>
-          </div>
-          <div class="input-block_ph">
-            <label for="Phone" class="labelph">Phone</label>
-            <input type="text" id="Phone">
-            <div class="hidden">
-            </div>
-          </div>
-        </div>   
       </div>
-    </div>
-  </section>
-
+    </section>
+  </main>
 </body>
 </html>
