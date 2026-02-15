@@ -17,11 +17,14 @@ main{
   width: 70%;
   margin-left: 15%;
   margin-top: 2%;
+  height: 93vh;
+  box-sizing: border-box;
 }
 
 section{
   display: flex;
   height: 93vh;
+  box-sizing: border-box;
 }
 a{
   text-decoration: none;
@@ -57,6 +60,7 @@ a{
 }
 .second-block{
   width: 45%;
+  height: 100%;
 }
 .second-part{
   width: 100%;
@@ -75,7 +79,7 @@ a{
 }
 
 .opening-text_subhead{
-  margin-top: 5%;
+  margin-top: 1%;
   font-size: 1vw;
   width: 90%;
   margin-bottom: 10%;
@@ -87,14 +91,13 @@ a{
 .link-sm{
   width: 99%;
   justify-content: center;
-  height: 4%;
   display: flex;
   gap: 7%;
 }
 
 .facebook-logo{
   width: 100%;
-  height: 90%;
+  height: 80%;
   background-color:#255A9B;
   display: flex;
   padding: 3%;
@@ -103,7 +106,7 @@ a{
 
 .linkedin-logo{
   width: 100%;
-  height: 90%;
+  height: 80%;
   background-color:#0076B6;
   display: flex;
   padding: 3%;
@@ -127,11 +130,12 @@ a{
 }
 
 .social-logo_img{
-  height: 80%;
+  width: 15%;
+  height: 70%;
 }
 
 hr{
-  width:10%;
+  width:20%;
   margin-left: 2%;
 }
 .or{
@@ -157,12 +161,14 @@ hr{
 .input-block_em{
   position: relative;
   width: 30%;
+  border: #EEEEEE 0.6px solid;
 }
 
 .input-block_ph{
   position: relative;
   width: 30%;
   margin-left: 18%;
+  border: #EEEEEE 0.6px solid;
 }
 .labelem{
   margin: 0;
@@ -187,7 +193,7 @@ hr{
 .email{
   outline:none;
   border:#EEEEEE;
-  width:10vw;
+  width:9vw;
   margin-top: 0;
   padding-top: 2px;
   margin-left:1px;
@@ -198,7 +204,7 @@ hr{
 .phone{
   outline:none;
   border:#EEEEEE;
-  width:10vw;
+  width:9vw;
   padding-top: 2px;
   margin-top: 0;
   margin-left:1px;
@@ -221,18 +227,17 @@ input:focus + .hidden{
 .opening-text-2{
   width: 90%;
   color: #7B8A92;
-  height: 5%;
+  height: 3%;
   margin-top: 5%;
   font-family:Barlow, sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-left: 11%;
 }
 
 .opening-text_subhead-2{
-  margin-top: 5%;
+  margin-top: 4%;
   font-size: 0.8vw;
   width: 90%;
-  margin-bottom: 10%;
   margin-left: 11%;
   color: #96A5B1;
   font-family:Barlow, sans-serif;
@@ -240,12 +245,12 @@ input:focus + .hidden{
 
 .radio-button{
   display: flex;
+  margin-top: 10%;
   margin-left: 6%;
   justify-content: space-around;
-  width: 85%;
   position: relative;
-  height:20%;
-  margin-bottom: 1px;
+  width: 85%;
+  height: 13%;
 }
 
 .choose{
@@ -329,12 +334,12 @@ input:focus + .hidden{
   position:absolute;
   color: #AFAFAF;
   font-family:Barlow, sans-serif;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   display: none;
   bottom:10%;
   left: 10%;
-  border: #96A5B1 1px solid;
-  border-radius: 10px;
+  box-shadow: 0 0px 10px #96A5B1;
+  border-radius: 5px;
   padding: 1%;
   user-select: none;
 }
@@ -346,13 +351,13 @@ input:focus + .hidden{
 .discription-business{
   position:absolute;
   font-family:Barlow, sans-serif;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   display: none;
   bottom:10%;
   color: #AFAFAF;
   left: 10%;
-  border: #96A5B1 1px solid;
-  border-radius: 10px;
+  box-shadow: 0 0px 10px #96A5B1;
+  border-radius: 5px;
   padding: 1%;
   user-select: none;
 }
@@ -365,12 +370,12 @@ input:focus + .hidden{
   position:absolute;
   font-family:Barlow, sans-serif;
   color: #AFAFAF;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   display: none;
   bottom:10%;
   left: 10%;
-  border: #96A5B1 1px solid;
-  border-radius: 10px;
+  box-shadow: 0 0px 10px #96A5B1;
+  border-radius: 5px;
   padding: 1%;
   user-select: none;
 }
@@ -383,12 +388,12 @@ input:focus + .hidden{
   position:absolute;
   color: #AFAFAF;
   font-family:Barlow, sans-serif;
-  font-size: 0.9vw;
+  font-size: 0.7vw;
   display: none;
   bottom:10%;
   left: 10%;
-  border: #96A5B1 1px solid;
-  border-radius: 10px;
+  box-shadow: 0 0px 10px #96A5B1;
+  border-radius: 5px;
   padding: 1%;
   user-select: none;
 }
@@ -402,9 +407,9 @@ input:focus + .hidden{
   font-size: 0.8vw;
   padding-left: 10%;
   gap: 5px;
-  margin-top: 5%;
   font-family:Barlow, sans-serif;
   color: #AFAFAF;
+  margin-top: 10%;
 }
 
 .term-lb{
@@ -420,20 +425,45 @@ input:focus + .hidden{
 .reg{
   display: flex;
   align-items: center;
+  margin-top: 10%;
   margin-left: 10%;
+  height: 2.5%;
 }
 
 .create-button{
   background-color:#3698FB;
   border-radius: 3px;
   width: 39%;
+  height:100%;
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vw;
+  font-size: 0.7vw;
+  font-weight: 600;
   text-align: center;
   color:#FFFFFF;
   margin-top: 5%;
   padding: 1.5% 0 1.5% 0;
   font-family:Barlow, sans-serif;
+  margin-bottom: 10px;
+}
+
+
+
+@media (max-height: 960px) {
+  .opening-text{
+    padding-top: 10%;
+  }
+
+  .opening-text_subhead{
+    margin-top: 1.5%;
+    margin-bottom:8%;
+  }
+  .opening-text_subhead-2{
+    margin-bottom: 5%;
+  }
+
+  .terms{
+    margin-top: 5%;
+  }
 }
